@@ -1,0 +1,10 @@
+num_topic: 50
+n_term: 2823
+batch_size: 500
+n_infer: 100
+learning_rate: 0.01
+alpha: 0.01
+sigma: 1
+mean: 1
+variance: 1
+num_test: 5
