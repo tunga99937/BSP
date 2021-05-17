@@ -6,11 +6,11 @@ This is implementation of "Balancing stability and plasticity in learning topicm
 
 # Training
 - Holdout_test:
-'''
+```
 python run.py [dataset_name] [times] [type_model] [rate] [weight] [iters] [start]
-'''
+```
 - The remaining concepts:
-'''
+```
 python run.py [times] [type_model] [rate] [weight] [iters] [start]
-'''
+```
 
