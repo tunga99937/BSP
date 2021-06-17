@@ -1,0 +1,12 @@
+- pp.py và preprocessing.py dùng để tạo ra tập train, tập vocab và tập prior
+- holdout_process.py dùng để chia tập train thành các class dùng cho việc chạy kịch bản concept drift và forgetting. 
+- split-test.py dùng để chia dữ liệu cho kịch bản chronological, giúp việc chạy kịch bản này dễ hơn (có thể không cần sử dụng).
+- Lệnh chạy:
+
++) python preprocessing.py filein folder fileprior
+
++) python pp.py output_preprocessing filevocab folder fileprior
+
++) python holdout_process.py num_topic batch_size
+
++) python split-test.py filetrain
