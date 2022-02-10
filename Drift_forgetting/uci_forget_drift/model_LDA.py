@@ -193,8 +193,8 @@ class Model:
         h_t_tens = torch.tensor(h_t).to(device)
 
         self.a_t += 1./2 * h_t
-        self.b_t += grad_t - torch.bmm(pi_t_tens, h_t_tens).clone().detach().cpu().numpy().reshape((self.num_topic, self.length))
-        #self.b_t += - torch.bmm(pi_t_tens, h_t_tens).clone().detach().cpu().numpy().reshape((self.num_topic, self.length))
+        #self.b_t += grad_t - torch.bmm(pi_t_tens, h_t_tens).clone().detach().cpu().numpy().reshape((self.num_topic, self.length))
+        self.b_t += - torch.bmm(pi_t_tens, h_t_tens).clone().detach().cpu().numpy().reshape((self.num_topic, self.length))
         
         end = time.time()
         print('Total time update: %f' %(end - start))
